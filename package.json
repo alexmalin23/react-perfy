@@ -2,6 +2,13 @@
   "name": "react-perfy-example",
   "version": "0.1.0",
   "private": true,
+  "author": "Alex Malin <alexmalin23@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexmalin23/react-perfy.git"
+  },
+  "homepage": "https://github.com/alexmalin23/react-perfy#readme",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
