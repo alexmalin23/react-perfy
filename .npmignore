@@ -1,0 +1,24 @@
+# Source
+src/
+
+# Configs
+.eslintrc.json
+.gitignore
+tsconfig.json
+rollup.config.mjs
+
+# Dependencies
+node_modules/
+
+# Examples
+examples/
+
+# Tests
+__tests__/
+coverage/
+
+# Development
+.vscode/
+.idea/
+.github/
+*.log 
