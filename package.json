@@ -1,58 +1,33 @@
 {
-  "name": "react-perfy",
-  "version": "1.0.0",
-  "description": "Real-time React performance profiler with dashboard & AI agent (dev only)",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
-  "sideEffects": false,
-  "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "clean": "rimraf dist",
-    "lint": "eslint src --ext .ts,.tsx",
-    "prebuild": "npm run clean",
-    "prepare": "npm run build"
-  },
-  "keywords": [
-    "react",
-    "performance",
-    "profiler",
-    "dashboard",
-    "ai"
-  ],
-  "author": "Alex Malin <alexmalin23@gmail.com>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/alexmalin/react-perfy.git"
-  },
-  "license": "MIT",
-  "peerDependencies": {
-    "react": "^17.0.0 || ^18.0.0 || ^19.0.0",
-    "react-dom": "^17.0.0 || ^18.0.0 || ^19.0.0"
+  "name": "react-perfy-example",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^28.0.3",
-    "@rollup/plugin-node-resolve": "^16.0.1",
-    "@rollup/plugin-typescript": "^12.1.2",
-    "@types/react": "^19.1.4",
-    "@types/react-dom": "^19.1.5",
-    "@typescript-eslint/eslint-plugin": "^8.32.1",
-    "@typescript-eslint/parser": "^8.32.1",
-    "eslint": "^8.57.1",
-    "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "rimraf": "^5.0.10",
-    "rollup": "^4.41.0",
-    "rollup-plugin-dts": "^6.2.1",
-    "typescript": "^5.8.3"
+    "@types/react": "^18.2.0", 
+    "@types/react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.9.5"
   },
-  "engines": {
-    "node": ">=14"
+  "scripts": {
+    "start": "SKIP_PREFLIGHT_CHECK=true DISABLE_ESLINT_PLUGIN=true EXTEND_ESLINT=false GENERATE_SOURCEMAP=false ESLINT_NO_DEV_ERRORS=true react-scripts start",
+    "build": "SKIP_PREFLIGHT_CHECK=true DISABLE_ESLINT_PLUGIN=true EXTEND_ESLINT=false react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
